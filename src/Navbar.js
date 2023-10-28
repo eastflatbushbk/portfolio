@@ -50,7 +50,7 @@ const Navbar = () => {
           </a>
         </div> */}
   <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link"href="https://bulma.io">
+        <a class="navbar-link" href="https://www.linkedin.com/in/robert-sainton-677500286/">
           Contact
         </a>
 

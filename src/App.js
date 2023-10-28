@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import Home from './components/Home';
 import { Routes ,Route } from "react-router-dom";
 import Skills from './components/Skills';
+import Project from './components/Project';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
                           <Route exact path="/home" element={<Home />} />
                           {/* <Route exact path="/about" element={<MatchForm />} /> */}
                           <Route exact path="/skills" element={<Skills />} />
-                          {/* <Route exact path="/projects" element={<EditMatchForm rendering={rendering}     />} /> */}
+                          <Route exact path="/projects" element={<Project   />} />
                           
                     </Routes>
     </div>

@@ -24,9 +24,9 @@ const Navbar = () => {
         Home
       </a>
 
-      <a class="navbar-item"href="/about">
+      {/* <a class="navbar-item"href="/about">
         About
-      </a>
+      </a> */}
       <a class="navbar-item"href="/skills">
         Skills
       </a>

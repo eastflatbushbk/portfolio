@@ -6,6 +6,7 @@ import Home from './components/Home';
 import { Routes ,Route } from "react-router-dom";
 import Skills from './components/Skills';
 import Project from './components/Project';
+import WineFanaticPage from './components/WineFanaticPage';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
                           {/* <Route exact path="/about" element={<MatchForm />} /> */}
                           <Route exact path="/skills" element={<Skills />} />
                           <Route exact path="/projects" element={<Project   />} />
+                          <Route exact path="/project-one" element={<WineFanaticPage />} />
+                          {/* <Route exact path="/projects" element={<Project   />} /> */}
                           
                     </Routes>
     </div>

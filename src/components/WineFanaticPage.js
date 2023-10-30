@@ -1,5 +1,4 @@
 import React from 'react'
-// import wfblur from '../images/wfblur.png'
 import wfblur2 from '../images/wfblur2.png'
 
 const WineFanaticPage = () => {
@@ -14,31 +13,24 @@ const WineFanaticPage = () => {
           src={wfblur2}
           alt='/'
         />
-        {/* <div className='container'>
-        <div >
-          <h2 >Wine Fanatic</h2>
-          <h3>Ruby on Rails / React JS / Material ui</h3>
-        </div>
-      </div> */}
-      <div className="columns is-multiline is-mobile">
+    <div className="columns is-multiline is-mobile">
       <div className='column is-three-quarter'>
         <div class="card">
   <div class="card-content">
     <div class="content">
-            {/* <p>Project</p> */}
-            <h3>Overview</h3>
+            <h4 style={{ color: 'blue', fontSize: '20px' }}>Project Overview</h4>
             <p>Wine reviewer app that allows users to add wine to their virtual cellar</p>
              <ul>
               <p className='py-1'>● Developed JavaScript/React front-end and Ruby on Rails/SQLite back-end apppcation</p>
               <p className='py-1'>● Designed using Material UI CSS Framework</p>
               <p className='py-1'>● Implemented Redux to manage state in the front-end </p>
             </ul>
-           <a href='https://github.com/mcrooks65/flagnote-react-redux-frontend'>
+           <a href='https://github.com/eastflatbushbk/wine-fanatic'>
             <button class="button is-link is-outlined">Code</button>
             </a>
               &nbsp;
               &nbsp;
-           <a href='https://www.youtube.com/watch?v=zmkXnhKiTMo'>
+           <a href='https://youtu.be/UrFMpJmeSsk'>
               <button class="button is-link is-outlined">Demo</button>
               </a>
           </div>
@@ -71,9 +63,8 @@ const WineFanaticPage = () => {
       &nbsp;
       &nbsp;
       &nbsp;
-      <a href='/#projects'>
-        {/* <p className='py-3 px-3 underline cursor-pointer'>Back</p> */}
-        <button class="button is-small is-danger">
+      <a href='/projects'>
+         <button class="button is-small is-danger">
               <span class="icon">
                  <ion-icon name="arrow-back-outline"></ion-icon>
               </span>

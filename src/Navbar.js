@@ -7,7 +7,7 @@ const Navbar = () => {
     <div>
       <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item has-text-info" href="/about">
+    <a class="navbar-item has-text-info is-disable" href="/home">
       ROBERT SAINTON
     </a>
 

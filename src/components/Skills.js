@@ -1,4 +1,20 @@
 import React from 'react'
+import js from '../images/js.png'
+import reactjs from '../images/reactjs.png'
+import css from '../images/css.png'
+import ruby from '../images/ruby.png'
+import rails from '../images/rails.png'
+import html from '../images/html.png'
+import redux from '../images/redux.png'
+import sqlite from '../images/SQLite.png'
+import postgresql from '../images/postgresql.png'
+import mui from '../images/mui.png'
+import bulma from '../images/bulma.png'
+import bootstap from '../images/bootstrap.png'
+import nextjs from '../images/nextjs.png'
+import tailwind from '../images/tailwind.png'
+import materialize from '../images/materialize.png'
+import vercel from '../images/vercel.png'
 
 const Skills = () => {
   return (
@@ -13,7 +29,7 @@ const Skills = () => {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://www.vhv.rs/dpng/d/456-4562295_library-of-javascript-icon-graphic-freeuse-png-files.png" alt=""/>
+                  <img src={js} alt=""/>
                 </figure>
               </div>
               <div class="media-content">
@@ -29,7 +45,7 @@ const Skills = () => {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://www.pngfind.com/pngs/m/685-6854970_react-logo-png-png-download-logo-png-reactjs.png" alt=""/>
+                  <img src={reactjs} alt=""/>
                 </figure>
               </div>
               <div class="media-content">
@@ -45,7 +61,7 @@ const Skills = () => {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://clipground.com/images/background-image-transparency-css-clipart-1.jpg" alt=""/>
+                  <img src={css} alt=""/>
                 </figure>
               </div>
               <div class="media-content">
@@ -61,7 +77,7 @@ const Skills = () => {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://brandlogos.net/wp-content/uploads/2016/07/ruby-vector-logo.png" alt=""/>
+                  <img src={ruby} alt=""/>
                 </figure>
               </div>
               <div class="media-content">
@@ -77,7 +93,7 @@ const Skills = () => {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://chrisvo.dev/static/rails-logo-3d77bbbf9bf9b3f3c8eef6e9470dc43d.png" alt=""/>
+                  <img src={rails} alt=""/>
                 </figure>
               </div>
               <div class="media-content">
@@ -93,7 +109,7 @@ const Skills = () => {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://logodownload.org/wp-content/uploads/2016/10/html5-logo-9.png" alt=""/>
+                  <img src={html} alt=""/>
                 </figure>
               </div>
               <div class="media-content">
@@ -109,7 +125,7 @@ const Skills = () => {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/redux_original_logo_icon_146365.png" alt=""/>
+                  <img src={redux} alt=""/>
                 </figure>
               </div>
               <div class="media-content">
@@ -125,7 +141,7 @@ const Skills = () => {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://dwglogo.com/wp-content/uploads/2018/03/SQLite_Vector_logo-300x207.png" alt=""/>
+                  <img src={sqlite} alt=""/>
                 </figure>
               </div>
               <div class="media-content">
@@ -141,7 +157,7 @@ const Skills = () => {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://www.pinclipart.com/picdir/big/519-5199224_postgresql-logo-png-transparent-clipart.png" alt=""/>
+                  <img src={postgresql} alt=""/>
                 </figure>
               </div>
               <div class="media-content">
@@ -157,7 +173,7 @@ const Skills = () => {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://commerceda.com/images/material-ui-logo.png" alt=""/>
+                  <img src={mui} alt=""/>
                 </figure>
               </div>
               <div class="media-content">
@@ -173,7 +189,7 @@ const Skills = () => {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://branditechture.agency/brand-logos/wp-content/uploads/wpdm-cache/bulma-900x0.png" alt=""/>
+                  <img src={bulma} alt=""/>
                 </figure>
               </div>
               <div class="media-content">
@@ -189,7 +205,7 @@ const Skills = () => {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://brandlogos.net/wp-content/uploads/2021/09/bootstrap-logo.png" alt=""/>
+                  <img src={bootstap} alt=""/>
                 </figure>
               </div>
               <div class="media-content">
@@ -205,7 +221,7 @@ const Skills = () => {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://seeklogo.com/images/N/next-js-icon-logo-EE302D5DBD-seeklogo.com.png" alt=""/>
+                  <img src={nextjs} alt=""/>
                 </figure>
               </div>
               <div class="media-content">
@@ -221,7 +237,7 @@ const Skills = () => {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://iconape.com/wp-content/files/an/351546/png/tailwind-css-logo.png" alt=""/>
+                  <img src={tailwind} alt=""/>
                 </figure>
               </div>
               <div class="media-content">
@@ -237,7 +253,7 @@ const Skills = () => {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://seeklogo.com/images/V/vercel-logo-F748E39008-seeklogo.com.png" alt=""/>
+                  <img src={vercel} alt=""/>
                 </figure>
               </div>
               <div class="media-content">
@@ -253,7 +269,7 @@ const Skills = () => {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://iconape.com/wp-content/png_logo_vector/materialize-logo.png" alt=""/>
+                  <img src={materialize} alt=""/>
                 </figure>
               </div>
               <div class="media-content">

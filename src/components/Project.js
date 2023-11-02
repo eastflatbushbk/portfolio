@@ -46,7 +46,9 @@ const Project = () => {
                                              <p class="text is-8">Front end : React - useContext</p>
                                              <p class="text is-8">Back end : Ruby on rails API</p>
                                      </div>
-                                          <button class="button is-info is-outlined">more info</button>  
+                                     <a href='/project-two'>
+                                          <button class="button is-info is-outlined">more info</button> 
+                                          </a> 
                                  </div>
      
                             </div>

@@ -45,10 +45,10 @@ const Home = () => {
                 &nbsp;
                 <a href="https://github.com/eastflatbushbk">
                 <button class="button is-medium">
-    <span class="icon">
-    <ion-icon name="logo-github"></ion-icon>
-    </span>
-    <span>GitHub</span>
+                     <span class="icon">
+                            <ion-icon name="logo-github"></ion-icon>
+                       </span>
+         <span>GitHub</span>
   </button>
                 </a>                        
             </div>

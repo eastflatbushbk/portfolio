@@ -25,8 +25,7 @@ const Home = () => {
         &nbsp;
         &nbsp;
             <p className='px-24 py-4 text-white max-2-[80%] m-auto text-2xl is-size-3'>
-            I’m a Full-stack Software Engineer with experience in JavaScript, React, Ruby, Ruby on Rails, SQL, and PostgreSQL. I’m a graduate of Flatiron School and have a background in pest management and have excellent communication skills. I’m detail-oriented and a people person who enjoys working collaboratively with colleagues to tackle difficult tasks. I’m passionate about building clean, user-friendly digital experiences that make people’s lives easier.
-            </p>
+            I am a Full-stack Software Engineer with a strong background in JavaScript, React, Ruby, Ruby on Rails, SQL, and PostgreSQL. I graduated from Flatiron School and have honed my skills through hands-on experience. My previous experience in pest management has taught me to be detail-oriented and an excellent communicator. I am a people person who enjoys working collaboratively with colleagues to tackle difficult tasks. I am passionate about building clean, user-friendly digital experiences that make people’s lives easier. I am confident that my skills and experience make me a valuable asset to any team.</p>
             &nbsp;
         &nbsp;
         &nbsp;

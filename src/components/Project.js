@@ -14,6 +14,7 @@ const Project = () => {
                    <div class="card-image">
                        <figure class="image is-3by3">
                              <img src={wineFanatic} alt=""/>
+                             
                        </figure>
                    </div>
                                <div class="card-content">

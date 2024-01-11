@@ -51,8 +51,7 @@ const Project = () => {
                                           <button class="button is-info is-outlined">more info</button> 
                                           </a> 
                                  </div>
-     
-                            </div>
+                           </div>
                     </div>
                </div>
           </div>

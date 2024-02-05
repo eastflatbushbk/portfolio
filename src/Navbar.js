@@ -20,14 +20,14 @@ const Navbar = () => {
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item"href="/home">
+      <a class="navbar-item"href="/portfolio/home">
         Home
       </a>
 
       {/* <a class="navbar-item"href="/about">
         About
       </a> */}
-      <a class="navbar-item"href="/skills">
+      <a class="navbar-item"href="/portfolio/skills">
         Skills
       </a>
       <a class="navbar-item"href="/portfolio/projects">

@@ -22,6 +22,8 @@ function App() {
                           <Route exact path="/portfolio/project-two" element={<MatchdayPage  />} />                       
                     </Routes>
                     <Home />
+                    <Skills />
+                    <Project   />
     </div>
     
   );

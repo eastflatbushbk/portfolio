@@ -30,7 +30,7 @@ const Navbar = () => {
       <a class="navbar-item"href="/skills">
         Skills
       </a>
-      <a class="navbar-item"href="/projects">
+      <a class="navbar-item"href="/portfolio/projects">
         Projects
       </a>
 

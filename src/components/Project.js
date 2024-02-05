@@ -24,7 +24,7 @@ const Project = () => {
                                                   <p class="text is-8">Front end : React - Redux</p>
                                                   <p class="text is-8">Back end : Ruby on rails API</p>
                                               </div>
-                                              <a href='portfolio/project-one'>
+                                              <a href='/portfolio/project-one'>
                                               <button class="button is-info is-outlined">more info</button>
                                               </a>
                                           </div>
@@ -47,7 +47,7 @@ const Project = () => {
                                              <p class="text is-8">Front end : React - useContext</p>
                                              <p class="text is-8">Back end : Ruby on rails API</p>
                                      </div>
-                                     <a href='portfolio/project-two'>
+                                     <a href='/portfolio/project-two'>
                                           <button class="button is-info is-outlined">more info</button> 
                                           </a> 
                                  </div>

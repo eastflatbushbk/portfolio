@@ -27,10 +27,10 @@ const Navbar = () => {
       {/* <a class="navbar-item"href="/about">
         About
       </a> */}
-      <a class="navbar-item"href="/skills">
+      <a class="navbar-item"href="/portfolio/skills">
         Skills
       </a>
-      <a class="navbar-item"href="/projects">
+      <a class="navbar-item"href="/portfolio/projects">
         Projects
       </a>
 

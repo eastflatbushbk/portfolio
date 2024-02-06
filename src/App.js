@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <Navbar/>
-      <BrowserRouter basename="/porfolio">
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
                           <Route exact path="/home" element={<Home />} />
                           {/* <Route exact path="/about" element={<About />} /> */}

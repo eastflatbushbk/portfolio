@@ -30,7 +30,7 @@ const Navbar = () => {
       {/* <a class="navbar-item"href="/about">
         About
       </a> */}
-      <a class="navbar-item" onClick={handleSkillsNav}>
+      <a class="navbar-item" href={handleSkillsNav}>
         Skills
       </a>
       <a class="navbar-item"href="/portfolio/projects">

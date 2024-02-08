@@ -5,10 +5,15 @@ import { useNavigate } from 'react-router-dom';
 
 const MatchdayPage = () => {
   const navigate = useNavigate();
-  const handleNavigation = () => {
-    // Navigate to a specific route
-    navigate('/portfolio/projects');
-  };
+
+  const goBack = () => {
+    navigate(-1);
+       } 
+
+  // const handleNavigation = () => {
+  //   // Navigate to a specific route
+  //   navigate('/portfolio/projects');
+  // };
 
   return (
     <div >
@@ -33,12 +38,12 @@ const MatchdayPage = () => {
           <p className='py-1'>● Enacted useContext to share global data for React components</p>
           <p className='py-1'>● Utilized Bootstrap CSS library to design the front-end</p>
         </ul>
-       <a href='https://github.com/eastflatbushbk/matchday' rel="noopener noreferrer">
+       <a href='https://github.com/eastflatbushbk/matchday' target="_blank" rel="noopener noreferrer">
         <button class="button is-link is-outlined">Code</button>
         </a>
           &nbsp;
           &nbsp;
-       <a href='https://youtu.be/6yNoPodl1ck' rel="noopener noreferrer">
+       <a href='https://youtu.be/6yNoPodl1ck' target="_blank" rel="noopener noreferrer">
           <button class="button is-link is-outlined">Demo</button>
           </a>
       </div>
@@ -72,7 +77,7 @@ const MatchdayPage = () => {
   &nbsp;
   &nbsp;
   {/* <a href='/portfolio/projects'> */}
-     <button class="button is-small is-danger" onClick={handleNavigation}>
+     <button class="button is-small is-danger" onClick={goBack}>
           <span class="icon">
              <ion-icon name="arrow-back-outline"></ion-icon>
           </span>

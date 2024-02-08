@@ -4,10 +4,13 @@ import { useNavigate } from 'react-router-dom';
 
 const WineFanaticPage = () => {
   const navigate = useNavigate();
-  const handleNavigation = () => {
-    // Navigate to a specific route
-    navigate('/portfolio/projects');
-  };
+  const goBack = () => {
+    navigate(-1);
+       } 
+  // const handleNavigation = () => {
+  //   // Navigate to a specific route
+  //   navigate('/portfolio/projects');
+  // };
 
   return (
     
@@ -32,12 +35,12 @@ const WineFanaticPage = () => {
               <p className='py-1'>● Designed using Material UI CSS Framework</p>
               <p className='py-1'>● Implemented Redux to manage state in the front-end </p>
             </ul>
-           <a href='https://github.com/eastflatbushbk/wine-fanatic' rel="noopener noreferrer">
+           <a href='https://github.com/eastflatbushbk/wine-fanatic'target="_blank" rel="noopener noreferrer">
             <button class="button is-link is-outlined">Code</button>
             </a>
               &nbsp;
               &nbsp;
-           <a href='https://youtu.be/UrFMpJmeSsk' rel="noopener noreferrer">
+           <a href='https://youtu.be/UrFMpJmeSsk' target="_blank" rel="noopener noreferrer">
               <button class="button is-link is-outlined">Demo</button>
               </a>
           </div>
@@ -71,7 +74,7 @@ const WineFanaticPage = () => {
       &nbsp;
       &nbsp;
       <a href='/portfolio/projects'>
-         <button class="button is-small is-danger" onClick={handleNavigation}>
+         <button class="button is-small is-danger" onClick={goBack}>
               <span class="icon">
                  <ion-icon name="arrow-back-outline"></ion-icon>
               </span>

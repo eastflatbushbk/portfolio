@@ -71,15 +71,15 @@ const Navbar = () => {
           </a>
         </div> */}
   <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link" href="https://www.linkedin.com/in/robert-sainton-677500286/" rel="noopener noreferrer">
+        <a class="navbar-link" href="https://www.linkedin.com/in/robert-sainton-677500286/" target="_blank" rel="noopener noreferrer">
           Contact
         </a>
 
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://www.linkedin.com/in/robert-sainton-677500286/" rel="noopener noreferrer">
+          <a class="navbar-item" href="https://www.linkedin.com/in/robert-sainton-677500286/" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
-          <a class="navbar-item"href="https://github.com/eastflatbushbk/" rel="noopener noreferrer">
+          <a class="navbar-item"href="https://github.com/eastflatbushbk/" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
           

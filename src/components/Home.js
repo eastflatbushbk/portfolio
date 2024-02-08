@@ -30,7 +30,7 @@ const Home = () => {
         &nbsp;
         &nbsp;
             <div >
-                <a href="https://www.linkedin.com/in/robert-sainton-677500286/">
+                <a href="https://www.linkedin.com/in/robert-sainton-677500286/" target="_blank" rel="noopener noreferrer">
                     {/* <div className='rounded-full shadow-lg shadow-gray-200 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                         linkedin
                     </div> */}
@@ -42,7 +42,7 @@ const Home = () => {
   </button>
                 </a>
                 &nbsp;
-                <a href="https://github.com/eastflatbushbk">
+                <a href="https://github.com/eastflatbushbk" target="_blank" rel="noopener noreferrer">
                 <button class="button is-medium">
                      <span class="icon">
                             <ion-icon name="logo-github"></ion-icon>

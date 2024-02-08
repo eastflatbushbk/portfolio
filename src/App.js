@@ -3,7 +3,7 @@ import './App.css';
 import React from 'react';
 import Navbar from './Navbar';
 import Home from './components/Home';
-import { Routes ,Route} from "react-router-dom";
+import { Routes ,Route, BrowserRouter} from "react-router-dom";
 import Skills from './components/Skills';
 import Project from './components/Project';
 import WineFanaticPage from './components/WineFanaticPage';
@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
      
-      {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
          <Navbar/>
             <Routes>
                           <Route exact path="/portfolio" element={<Home />} />
@@ -23,7 +23,7 @@ function App() {
                           <Route  path="/portfolio/project-one" element={<WineFanaticPage />} />
                           <Route  path="/portfolio/project-two" element={<MatchdayPage  />} />
                          </Routes>                        
-                    {/* </BrowserRouter> */}
+                    </BrowserRouter>
                    
     </div>
     

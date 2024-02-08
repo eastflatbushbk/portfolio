@@ -18,9 +18,9 @@ function App() {
                           <Route exact path="/portfolio" element={<Home />} />
                           {/* <Route exact path="/about" element={<About />} /> */}
                           <Route  path="/portfolio/skills" element={<Skills />} />
-                          <Route exact path="/portfolio/projects" element={<Project   />} />
-                          <Route exact path="/project-one" element={<WineFanaticPage />} />
-                          <Route exact path="/project-two" element={<MatchdayPage  />} />
+                          <Route  path="/portfolio/projects" element={<Project   />} />
+                          <Route  path="/project-one" element={<WineFanaticPage />} />
+                          <Route  path="/project-two" element={<MatchdayPage  />} />
                          </Routes>                        
                     </BrowserRouter>
                     <Home />

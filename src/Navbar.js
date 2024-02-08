@@ -13,15 +13,15 @@ const Navbar = () => {
        navigate('/portfolio/projects');
   };
   const handleHomeNav = () => {
-       navigate('portfolio/');
+       navigate('/portfolio');
   };
  
   return (
     <div>
       <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item has-text-info is-disable" href="/home">
-      <button class="button is-dark">
+    <a class="navbar-item has-text-info is-disable" href="/portfolio">
+      <button class="button is-dark" onClick={handleHomeNav}>
       ROBERT SAINTON
       </button>
     </a>

@@ -7,7 +7,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const handleSkillsNav = () => {
-       navigate('/skills');
+       navigate('/portfolio/skills');
   };
   const handleProjectsNav = () => {
        navigate('/portfolio/projects');

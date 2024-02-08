@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
          <Navbar/>
             <Routes>
-                          <Route exact path="/portfolio" element={<Home />} />
+                          <Route  path="/portfolio" element={<Home />} />
                           {/* <Route exact path="/about" element={<About />} /> */}
                           <Route  path="/portfolio/skills" element={<Skills />} />
                           <Route  path="/portfolio/projects" element={<Project   />} />
@@ -24,7 +24,7 @@ function App() {
                           <Route  path="/portfolio/project-two" element={<MatchdayPage  />} />
                          </Routes>                        
                     </BrowserRouter>
-                   
+                  
     </div>
     
   );

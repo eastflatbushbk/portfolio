@@ -1,8 +1,17 @@
 import React from 'react'
 import wineFanatic from '../images/wineFanatic.png'
 import matchday from '../images/matchday.png'
+import { useNavigate } from 'react-router-dom';
 
 const Project = () => {
+
+  const navigate = useNavigate();
+  const handleNavOne = () => {
+    navigate('/portfolio/project-one');
+};
+  const handleNavTwo = () => {
+    navigate('/portfolio/project-two');
+};
   return (
     <div id='projects' className='section '>
         <div className='container'>
@@ -25,7 +34,7 @@ const Project = () => {
                                                   <p class="text is-8">Back end : Ruby on rails API</p>
                                               </div>
                                               <a href='/portfolio/project-one'>
-                                              <button class="button is-info is-outlined">more info</button>
+                                              <button class="button is-info is-outlined"  onClick={handleNavOne}>more info</button>
                                               </a>
                                           </div>
         
@@ -48,7 +57,7 @@ const Project = () => {
                                              <p class="text is-8">Back end : Ruby on rails API</p>
                                      </div>
                                      <a href='/portfolio/project-two'>
-                                          <button class="button is-info is-outlined">more info</button> 
+                                          <button class="button is-info is-outlined"  onClick={handleNavTwo}>more info</button> 
                                           </a> 
                                  </div>
                            </div>

@@ -1,7 +1,14 @@
 import React from 'react'
 import wfblur2 from '../images/wfblur2.png'
+import { useNavigate } from 'react-router-dom';
 
 const WineFanaticPage = () => {
+  const navigate = useNavigate();
+  const handleNavigation = () => {
+    // Navigate to a specific route
+    navigate('/portfolio/projects');
+  };
+
   return (
     
     <div >
@@ -63,8 +70,8 @@ const WineFanaticPage = () => {
       &nbsp;
       &nbsp;
       &nbsp;
-      <a href='/projects'>
-         <button class="button is-small is-danger">
+      <a href='/portfolio/projects'>
+         <button class="button is-small is-danger" onClick={handleNavigation}>
               <span class="icon">
                  <ion-icon name="arrow-back-outline"></ion-icon>
               </span>

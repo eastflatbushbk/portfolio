@@ -1,8 +1,15 @@
 import React from 'react'
 import mdblur2 from '../images/mdblur2.png'
+import { useNavigate } from 'react-router-dom';
 
 
 const MatchdayPage = () => {
+  const navigate = useNavigate();
+  const handleNavigation = () => {
+    // Navigate to a specific route
+    navigate('/portfolio/projects');
+  };
+
   return (
     <div >
     <div>
@@ -64,8 +71,8 @@ const MatchdayPage = () => {
   &nbsp;
   &nbsp;
   &nbsp;
-  <a href='/projects'>
-     <button class="button is-small is-danger">
+  <a href='/portfolio/projects'>
+     <button class="button is-small is-danger" onClick={handleNavigation}>
           <span class="icon">
              <ion-icon name="arrow-back-outline"></ion-icon>
           </span>

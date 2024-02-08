@@ -1,79 +1,76 @@
-
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const Navbar = () => {
-  const navigate = useNavigate();
-  const handleSkillsNav = () =>{navigate('/portfolio/skills');}
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleNavigation = (path) => {
+    navigate(path); // Use navigate function to go to the specified path
+  };
+
   return (
     <div>
-      <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item has-text-info is-disable" href="/home">
-      ROBERT SAINTON
-    </a>
+      <nav className="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div className="navbar-brand">
+          {/* Use Link component instead of anchor tag */}
+          <Link className="navbar-item has-text-info" to="/home">
+            ROBERT SAINTON
+          </Link>
 
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" href="https://bulma.io">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item"href="/portfolio">
-        Home
-      </a>
-
-      {/* <a class="navbar-item"href="/about">
-        About
-      </a> */}
-      <a class="navbar-item" onClick={handleSkillsNav}>
-        Skills
-      </a>
-      <a class="navbar-item"href="/portfolio/projects">
-        Projects
-      </a>
-
-     
-    </div>
-
-    
-
-    <div class="navbar-end">
-      <div class="navbar-item">
-        {/* <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
+          <a
+            role="button"
+            className="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+            href="https://bulma.io"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
           </a>
-          <a class="button is-light">
-            Log in
-          </a>
-        </div> */}
-  <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link" href="https://www.linkedin.com/in/robert-sainton-677500286/">
-          Contact
-        </a>
-
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://www.linkedin.com/in/robert-sainton-677500286/">
-            LinkedIn
-          </a>
-          <a class="navbar-item"href="https://github.com/eastflatbushbk/">
-            GitHub
-          </a>
-          
         </div>
-      </div>
 
-      </div>
-    </div>
-  </div>
-</nav>
-    </div>
-  )
-}
+        <div id="navbarBasicExample" className="navbar-menu">
+          <div className="navbar-start">
+            <Link className="navbar-item" to="/portfolio">
+              Home
+            </Link>
 
-export default Navbar
+            {/* Uncomment and adjust other routes as needed */}
+            {/* <Link className="navbar-item" to="/about">
+              About
+            </Link> */}
+            <Link className="navbar-item" to="/portfolio/skills">
+              Skills
+            </Link>
+            <Link className="navbar-item" to="/portfolio/projects">
+              Projects
+            </Link>
+          </div>
+
+          <div className="navbar-end">
+            <div className="navbar-item">
+              <div className="navbar-item has-dropdown is-hoverable">
+                <a className="navbar-link" href="https://www.linkedin.com/in/robert-sainton-677500286/">
+                  Contact
+                </a>
+
+                <div className="navbar-dropdown">
+                  <a className="navbar-item" href="https://www.linkedin.com/in/robert-sainton-677500286/">
+                    LinkedIn
+                  </a>
+                  <a className="navbar-item" href="https://github.com/eastflatbushbk/">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  );
+};
+
+export default Navbar;

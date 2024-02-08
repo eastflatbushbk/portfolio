@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom'
 
 
 const Navbar = () => {
-  const navigate = useNavigate()
-  const handleSkillsNav = () =>{navigate('/portfolio/skills')}
+  const navigate = useNavigate();
+  const handleSkillsNav = () =>{navigate('/portfolio/skills');}
   return (
     <div>
       <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
@@ -30,7 +30,7 @@ const Navbar = () => {
       {/* <a class="navbar-item"href="/about">
         About
       </a> */}
-      <a class="navbar-item" href={handleSkillsNav}>
+      <a class="navbar-item" onClick={handleSkillsNav}>
         Skills
       </a>
       <a class="navbar-item"href="/portfolio/projects">

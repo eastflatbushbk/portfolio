@@ -1,18 +1,13 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-  const navigate = useNavigate(); // Initialize useNavigate
-
-  const handleNavigation = (path) => {
-    navigate(path); // Use navigate function to go to the specified path
-  };
+  const navigate = useNavigate();
 
   return (
     <div>
       <nav className="navbar is-dark" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-          {/* Use Link component instead of anchor tag */}
           <Link className="navbar-item has-text-info" to="/home">
             ROBERT SAINTON
           </Link>

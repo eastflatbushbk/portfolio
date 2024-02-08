@@ -1,71 +1,88 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+
+
 
 const Navbar = () => {
-  
+  const navigate = useNavigate();
 
+  const handleSkillsNav = () => {
+       navigate('/portfolio/skills');
+  };
+  const handleProjectsNav = () => {
+       navigate('/portfolio/projects');
+  };
+  const handleHomeNav = () => {
+       navigate('portfolio/');
+  };
+ 
   return (
     <div>
-      <nav className="navbar is-dark" role="navigation" aria-label="main navigation">
-        <div className="navbar-brand">
-          <Link className="navbar-item has-text-info" to="/home">
-            ROBERT SAINTON
-          </Link>
+      <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item has-text-info is-disable" href="/home">
+      ROBERT SAINTON
+    </a>
 
-          <a
-            role="button"
-            className="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-            href="https://bulma.io"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" href="https://bulma.io">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
 
-        <div id="navbarBasicExample" className="navbar-menu">
-          <div className="navbar-start">
-            <Link className="navbar-item" to="/portfolio">
-              Home
-            </Link>
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <button class="button is-dark" onClick={handleHomeNav}>
+        Home
+      </button>
 
-            {/* Uncomment and adjust other routes as needed */}
-            {/* <Link className="navbar-item" to="/about">
-              About
-            </Link> */}
-            <Link className="navbar-item" to="/portfolio/skills">
-              Skills
-            </Link>
-            <Link className="navbar-item" to="/portfolio/projects">
-              Projects
-            </Link>
-          </div>
+      {/* <a class="navbar-item"href="/about">
+        About
+      </a> */}
+      <button class=" button is-dark "  onClick={handleSkillsNav}>
+        Skills
+      </button>
+      <button class=" button is-dark" onClick={handleProjectsNav}>
+        Projects
+      </button>
 
-          <div className="navbar-end">
-            <div className="navbar-item">
-              <div className="navbar-item has-dropdown is-hoverable">
-                <a className="navbar-link" href="https://www.linkedin.com/in/robert-sainton-677500286/">
-                  Contact
-                </a>
-
-                <div className="navbar-dropdown">
-                  <a className="navbar-item" href="https://www.linkedin.com/in/robert-sainton-677500286/">
-                    LinkedIn
-                  </a>
-                  <a className="navbar-item" href="https://github.com/eastflatbushbk/">
-                    GitHub
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
+     
     </div>
-  );
-};
+    
+        
+    <div class="navbar-end">
+      <div class="navbar-item">
+        {/* <div class="buttons">
+          <a class="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light">
+            Log in
+          </a>
+        </div> */}
+  <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="https://www.linkedin.com/in/robert-sainton-677500286/">
+          Contact
+        </a>
 
-export default Navbar;
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://www.linkedin.com/in/robert-sainton-677500286/">
+            LinkedIn
+          </a>
+          <a class="navbar-item"href="https://github.com/eastflatbushbk/">
+            GitHub
+          </a>
+          
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+    </div>
+  )
+}
+
+export default Navbar

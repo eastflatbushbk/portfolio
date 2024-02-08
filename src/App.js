@@ -12,15 +12,16 @@ import MatchdayPage from './components/MatchdayPage';
 function App() {
   return (
     <div>
-      <Navbar/>
+     
       <BrowserRouter basename={process.env.PUBLIC_URL}>
+         <Navbar/>
             <Routes>
                           <Route exact path="/portfolio" element={<Home />} />
                           {/* <Route exact path="/about" element={<About />} /> */}
                           <Route  path="/portfolio/skills" element={<Skills />} />
                           <Route  path="/portfolio/projects" element={<Project   />} />
-                          <Route  path="/project-one" element={<WineFanaticPage />} />
-                          <Route  path="/project-two" element={<MatchdayPage  />} />
+                          <Route  path="/portfolio/project-one" element={<WineFanaticPage />} />
+                          <Route  path="/portfolio/project-two" element={<MatchdayPage  />} />
                          </Routes>                        
                     </BrowserRouter>
                     <Home />

@@ -33,12 +33,12 @@ const MatchdayPage = () => {
           <p className='py-1'>● Enacted useContext to share global data for React components</p>
           <p className='py-1'>● Utilized Bootstrap CSS library to design the front-end</p>
         </ul>
-       <a href='https://github.com/eastflatbushbk/matchday'>
+       <a href='https://github.com/eastflatbushbk/matchday' rel="noopener noreferrer">
         <button class="button is-link is-outlined">Code</button>
         </a>
           &nbsp;
           &nbsp;
-       <a href='https://youtu.be/6yNoPodl1ck'>
+       <a href='https://youtu.be/6yNoPodl1ck' rel="noopener noreferrer">
           <button class="button is-link is-outlined">Demo</button>
           </a>
       </div>

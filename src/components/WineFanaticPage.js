@@ -32,12 +32,12 @@ const WineFanaticPage = () => {
               <p className='py-1'>● Designed using Material UI CSS Framework</p>
               <p className='py-1'>● Implemented Redux to manage state in the front-end </p>
             </ul>
-           <a href='https://github.com/eastflatbushbk/wine-fanatic'>
+           <a href='https://github.com/eastflatbushbk/wine-fanatic' rel="noopener noreferrer">
             <button class="button is-link is-outlined">Code</button>
             </a>
               &nbsp;
               &nbsp;
-           <a href='https://youtu.be/UrFMpJmeSsk'>
+           <a href='https://youtu.be/UrFMpJmeSsk' rel="noopener noreferrer">
               <button class="button is-link is-outlined">Demo</button>
               </a>
           </div>

@@ -1,97 +1,81 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-
-
+import React, { useState } from 'react';
+import './Navbar.css';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const   
+ [isOpen, setIsOpen] = useState(false);   
+ // State to track menu visibility
 
   const handleSkillsNav = () => {
-       navigate('/portfolio/skills');
+    navigate('/portfolio/skills');
   };
+
   const handleProjectsNav = () => {
-       navigate('/portfolio/projects');
+    navigate('/portfolio/projects');
   };
+
   const handleHomeNav = () => {
-       navigate('/portfolio');
+    navigate('/portfolio');
   };
- 
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen); // Toggle menu visibility on click
+  };
+
   return (
     <div>
-      <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    {/* <a class="navbar-item has-text-info is-disable" href="/portfolio"> */}
-      <button class="button is-dark" onClick={handleHomeNav}>
-      ROBERT SAINTON
-      </button>
-    {/* </a> */}
+      <nav className={`navbar is-dark is-fixed-top ${isOpen ? 'is-active' : ''}`} role="navigation" aria-label="main navigation">
+        <div className="navbar-brand">
+          <button className="button is-dark" onClick={handleHomeNav}>
+            ROBERT SAINTON
+          </button>
 
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" href="https://eastflatbushbk.github.io/portfolio">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      
-   
-      <button class="button is-dark" onClick={handleHomeNav}>
-        Home
-      </button>
-     
-      {/* <a class="navbar-item"href="/about">
-        About
-      </a> */}
-      
-      
-      <button class=" button is-dark "  onClick={handleSkillsNav}>
-        Skills
-      </button>
-     
-      
-      
-      <button class=" button is-dark" onClick={handleProjectsNav}>
-        Projects
-      </button>
-     
-     
-    </div>
-    
-        
-    <div class="navbar-end">
-      <div class="navbar-item">
-        {/* <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light">
-            Log in
-          </a>
-        </div> */}
-  <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link" href="https://www.linkedin.com/in/robert-sainton-677500286/" target="_blank" rel="noopener noreferrer">
-          Contact
-        </a>
-
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://www.linkedin.com/in/robert-sainton-677500286/" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a>
-          <a class="navbar-item"href="https://github.com/eastflatbushbk/" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-          
+          <button  className="navbar-burger burger" aria-label="menu" aria-expanded={isOpen} data-target="navbarBasicExample" onClick={toggleMenu}>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
         </div>
-      </div>
 
-      </div>
+        <div id="navbarBasicExample" className={`navbar-menu 
+ ${isOpen ? 'is-active' : ''}`}>
+          <div className="navbar-start"> 
+
+            <button className="button is-dark" onClick={handleHomeNav}>
+              Home
+            </button>
+
+            <button className="button is-dark" onClick={handleSkillsNav}>
+              Skills
+            </button>
+
+            <button className="button is-dark" onClick={handleProjectsNav}>
+              Projects
+            </button>
+          </div>
+
+          <div className="navbar-end">
+            <div className="navbar-item has-dropdown is-hoverable">
+              <a className="navbar-link" href="https://www.linkedin.com/in/robert-sainton-677500286/" target="_blank" rel="noopener noreferrer">
+                Contact
+              </a>
+
+              <div className="navbar-dropdown">
+                <a className="navbar-item" href="https://www.linkedin.com/in/robert-sainton-677500286/" target="_blank" rel="noopener noreferrer">
+                  LinkedIn
+                </a>
+                <a className="navbar-item" href="https://github.com/eastflatbushbk/" target="_blank" rel="noopener noreferrer">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
-  </div>
-</nav>
-    </div>
-  )
-}
+  );
+};
 
 export default Navbar

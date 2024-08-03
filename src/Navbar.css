@@ -1,0 +1,18 @@
+/* Hide the navigation buttons by default */
+.navbar-menu {
+    display: none;
+  }
+  
+  /* Show the navigation buttons when the screen width is less than a certain value (e.g., 768px) */
+  @media screen and (max-width: 768px) {
+    .navbar-menu {
+      display: block;
+    }
+  }
+
+  .navbar-burger.burger {
+    /* Existing styles... */
+    background-color: transparent; /* Remove background color if needed */
+    border: none; /* Remove border if needed */
+    cursor: pointer; /* Set cursor to pointer for click indication */
+  }

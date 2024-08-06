@@ -4,9 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const   
- [isOpen, setIsOpen] = useState(false);   
- // State to track menu visibility
+  const [isOpen, setIsOpen] = useState(false); // State to track menu visibility
 
   const handleSkillsNav = () => {
     navigate('/portfolio/skills');
@@ -23,16 +21,17 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen); // Toggle menu visibility on click
   };
+  
 
   return (
     <div>
-      <nav className={`navbar is-dark is-fixed-top ${isOpen ? 'is-active' : ''}`} role="navigation" aria-label="main navigation">
+      <nav className= {`navbar is-dark is-fixed-top ${isOpen ? 'is-active' :'' }`} role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <button className="button is-dark" onClick={handleHomeNav}>
             ROBERT SAINTON
           </button>
 
-          <button  className="navbar-burger burger" aria-label="menu" aria-expanded={isOpen} data-target="navbarBasicExample" onClick={toggleMenu}>
+          <button  className={`navbar-burger ${isOpen ? 'is-active' : ''}`} aria-label="menu" aria-expanded={isOpen} data-target="navbarBasicExample" onClick={toggleMenu}>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
